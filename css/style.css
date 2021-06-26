@@ -67,17 +67,11 @@ li {
   margin-bottom: 32px;
 }
 
-#overview,
-#register {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
-#detail, #video,
+#overview, #detail, #video,
 #events, 
-#program,
+#register,
 #collaborators, 
-#sponsors, 
+#sponsors,#TnC,  
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -91,7 +85,7 @@ footer {
 
 #overview h3,
 #detail h3, #video h3,
-#register h3,
+#register h3, #TnC h3,
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -115,9 +109,9 @@ footer {
 
 #intro .btn-danger,
 #contact .btn-danger {
-    background: #082644;
-    border-color: transparent;
-    border-radius: 10px;
+    background: transparent;
+    border-color: #082644;
+    color:#082644
 }
 
 #contact .btn {
@@ -200,7 +194,7 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #082644;
+    background-color: white;
     box-shadow: 0px 5px 40px #b8b3b370
 }
 
@@ -242,11 +236,11 @@ footer {
 }
 
 .custom-navbar .navbar-toggle {
-    background-color: transparent;
+    background-color: #082644;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
+    background: white;
     border-color: transparent;
 }
 
@@ -269,7 +263,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/') 50% 0 repeat-y fixed;
+    background: url('../images/white-bg.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -282,13 +276,21 @@ footer {
      -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 
 #intro h3 {
   letter-spacing: 2px;
 }
+
+#header-img{
+  max-width: 70%;
+  min-width: 300px;
+  height: auto;
+  margin-top: 100px;
+}
+
 
 
 
@@ -298,6 +300,11 @@ footer {
 #overview img {
   position: relative;
   padding-bottom: 32px;
+}
+
+#overview{
+  background: #082644;
+  color: #ffffff;
 }
 
 
@@ -427,12 +434,17 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    /*background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;*/
+    background: #ffca1ac9;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+<<<<<<< HEAD
     /* background-color: #082644; */
     color: #ffffff;
+=======
+    color: #222;
+>>>>>>> a54bdbee4623e732dda52bb04c2da7785c4e363d
 }
 
 #register .form-control {
@@ -618,10 +630,19 @@ footer {
 /*---------------------------------------
    T&C section              
 -----------------------------------------*/
-#TnC-m{
+#TnC-m {
   margin-bottom: 40px;
 }
 
+#TnC {
+ background: white;
+}
+
+#TnC-text {
+  margin-top: 70px; 
+  margin-bottom: 30px;
+  font-size: 30px;
+}
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -757,4 +778,17 @@ footer {
     height: 100vh;
   }
 
+<<<<<<< HEAD
 }
+=======
+  #header-img{
+    margin-top: 0px;
+  }
+
+  #TnC-text {
+    margin-top: 0px; 
+  }
+
+}
+
+>>>>>>> a54bdbee4623e732dda52bb04c2da7785c4e363d
