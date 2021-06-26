@@ -67,13 +67,7 @@ li {
   margin-bottom: 32px;
 }
 
-#overview,
-#register {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
-#detail, #video,
+#overview, #detail, #video,
 #events, 
 #program,
 #collaborators, 
@@ -269,7 +263,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/') 50% 0 repeat-y fixed;
+    background: url('../images/white-bg.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -289,6 +283,13 @@ footer {
 #intro h3 {
   letter-spacing: 2px;
 }
+
+#header-img{
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+}
+
 
 
 
