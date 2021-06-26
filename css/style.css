@@ -69,15 +69,15 @@ li {
 
 #overview, #detail, #video,
 #events, 
-#program,
+#register,
 #collaborators, 
-#sponsors, 
+#sponsors,  
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
-#overview, #detail,
+#detail,
 #events, #sponsors, #collaborators, 
 footer {
   text-align: center;
@@ -276,7 +276,7 @@ footer {
      -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 
@@ -288,6 +288,7 @@ footer {
   max-width: 100%;
   min-width: 300px;
   height: auto;
+  margin-top: 200px;
 }
 
 
@@ -299,6 +300,11 @@ footer {
 #overview img {
   position: relative;
   padding-bottom: 32px;
+}
+
+#overview{
+  background: #082644;
+  color: #ffffff;
 }
 
 
@@ -755,6 +761,10 @@ footer {
 
   #intro {
     height: 100vh;
+  }
+
+  #header-img{
+    margin-top: 0px;
   }
 
 }
