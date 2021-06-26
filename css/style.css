@@ -431,6 +431,7 @@ footer {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+    /* background-color: #082644; */
     color: #ffffff;
 }
 
@@ -530,14 +531,14 @@ footer {
 
 
 /*---------------------------------------
-   Venue section              
+   Calender section
 -----------------------------------------*/
 #venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 #venue p {
@@ -757,4 +758,3 @@ footer {
   }
 
 }
-
