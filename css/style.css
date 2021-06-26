@@ -71,7 +71,7 @@ li {
 #events, 
 #register,
 #collaborators, 
-#sponsors,  
+#sponsors,#TnC,  
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -85,7 +85,7 @@ footer {
 
 #overview h3,
 #detail h3, #video h3,
-#register h3,
+#register h3, #TnC h3,
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -285,10 +285,10 @@ footer {
 }
 
 #header-img{
-  max-width: 100%;
+  max-width: 70%;
   min-width: 300px;
   height: auto;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 
@@ -434,11 +434,12 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    /*background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;*/
+    background: #ffca1ac9;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: #222;
 }
 
 #register .form-control {
@@ -624,10 +625,19 @@ footer {
 /*---------------------------------------
    T&C section              
 -----------------------------------------*/
-#TnC-m{
+#TnC-m {
   margin-bottom: 40px;
 }
 
+#TnC {
+ background: white;
+}
+
+#TnC-text {
+  margin-top: 70px; 
+  margin-bottom: 30px;
+  font-size: 30px;
+}
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -765,6 +775,10 @@ footer {
 
   #header-img{
     margin-top: 0px;
+  }
+
+  #TnC-text {
+    margin-top: 0px; 
   }
 
 }
