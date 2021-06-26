@@ -83,7 +83,7 @@ li {
     padding-bottom: 10rem;
 }
 
-#detail,
+#overview, #detail,
 #events, #sponsors, #collaborators, 
 footer {
   text-align: center;
@@ -115,9 +115,9 @@ footer {
 
 #intro .btn-danger,
 #contact .btn-danger {
-    background: #082644;
-    border-color: transparent;
-    border-radius: 10px;
+    background: transparent;
+    border-color: #082644;
+    color:#082644
 }
 
 #contact .btn {
@@ -200,7 +200,7 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #082644;
+    background-color: white;
     box-shadow: 0px 5px 40px #b8b3b370
 }
 
@@ -242,11 +242,11 @@ footer {
 }
 
 .custom-navbar .navbar-toggle {
-    background-color: transparent;
+    background-color: #082644;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
+    background: white;
     border-color: transparent;
 }
 
