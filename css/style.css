@@ -55,6 +55,10 @@ a {
   outline: none;
 }
 
+li {
+  line-height: 2;
+}
+
 
 /*---------------------------------------
     General               
@@ -70,8 +74,9 @@ a {
 }
 
 #detail, #video,
-#speakers, 
+#events, 
 #program,
+#collaborators, 
 #sponsors, 
 #contact, footer {
     padding-top: 10rem;
@@ -79,7 +84,7 @@ a {
 }
 
 #detail,
-#speakers, #sponsors,
+#events, #sponsors, #collaborators, 
 footer {
   text-align: center;
 }
@@ -110,8 +115,9 @@ footer {
 
 #intro .btn-danger,
 #contact .btn-danger {
-    background: #f2545f;
+    background: #082644;
     border-color: transparent;
+    border-radius: 10px;
 }
 
 #contact .btn {
@@ -119,7 +125,7 @@ footer {
 }
 
 #intro .btn-danger:hover {
-  background: transparent;
+  background: #ffca1a;
   border-color: #ffffff;
   color: #ffffff;
 }
@@ -130,7 +136,7 @@ footer {
 
 #intro .btn-default:hover {
     background: #ffffff;
-    color: #333333;
+    color: #082644;
     border-color: transparent;
 }
 
@@ -194,18 +200,19 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #101010;
+    background-color: #082644;
+    box-shadow: 0px 5px 40px #b8b3b370
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
+    color: #082644;
     font-weight: 600;
     font-size: 3rem;
     line-height: 40px;
 }
 
 .custom-navbar .nav li a {
-    color: #ddd;
+    color: #082644;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -216,7 +223,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #66ccff;
+    color: #ffca1a;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -226,7 +233,7 @@ footer {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #66ccff;
+    color: #ffca1a;
 }
 
 .custom-navbar .navbar-toggle {
@@ -250,7 +257,7 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: #101010;
+        background: #ffffff;
         padding: 0;
     }
 
@@ -262,7 +269,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -299,12 +306,12 @@ footer {
     Detail section              
 -----------------------------------------*/
 #detail {
-    background: #222;
+    background: #082644;
     color: #ffffff;
 }
 
 #detail .fa {
-  color: #f2545f;
+  color: #ffca1a;
   font-size: 48px;
 }
 
@@ -320,29 +327,29 @@ footer {
 
 
 /*---------------------------------------
-   Speakers section              
+   Events section              
 -----------------------------------------*/
-#speakers {
+#events {
     background: #f9f9f9;
 }
 
-#speakers h3 {
+#events h3 {
     font-size: 18px;
     margin-bottom: 0px;
 }
 
-#speakers h6 {
-  color: #666;
+#events h6 {
+  color: #082644;
   margin-top: 4px;
 }
 
-#speakers img {
+#events img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-#speakers .col-md-3 {
+#events .col-md-3 {
     display: block;
     width: 100%;
     padding-top: 30px;
@@ -350,7 +357,7 @@ footer {
     margin-bottom: 22px;
 }
 
-#speakers .speakers-wrapper {
+#events .events-wrapper {
     background: #ffffff;
     padding-bottom: 22px;
 }
@@ -361,7 +368,7 @@ footer {
    Program section              
 -----------------------------------------*/
 #program h4 {
-    color: #808080;
+    color: #082644;
     font-size: 12px;
 }
 
@@ -404,7 +411,7 @@ footer {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #f2545f;
+  color: #ffca1a;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -440,7 +447,7 @@ footer {
 }
 
 #register input[type="submit"] {
-  background: #f2545f;
+  background: #ffca1a;
   border-radius: 100px;
   border: none;
   color: #ffffff;
@@ -479,8 +486,8 @@ footer {
 }
 
 #faq .panel-default>.panel-heading {
-  background: #f0f0f0;
-  color: #505050;
+  background: #082644e8;
+  color: white;
 }
 
 #faq .panel-heading {
@@ -538,6 +545,12 @@ footer {
   padding-bottom: 18px;
 }
 
+/*---------------------------------------
+   Collaborators section              
+-----------------------------------------*/
+#collaborators img {
+  margin-top: 18px;
+}
 
 
 /*---------------------------------------
@@ -598,10 +611,15 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #f2545f;
+  background: #ffca1a;
 }
 
-
+/*---------------------------------------
+   T&C section              
+-----------------------------------------*/
+#TnC-m{
+  margin-bottom: 40px;
+}
 
 /*---------------------------------------
    Footer section              
@@ -614,7 +632,7 @@ footer {
 
 /* Back top */
 .go-top {
-  background-color: #222;
+  background-color: #082644;
   bottom: 2em;
   right: 2em;
   color: #ffffff;
@@ -630,7 +648,7 @@ footer {
 }
 
 .go-top:hover {
-    background: #f2545f;
+    background: #ffca1a;
     color: #ffffff;
 }
 
@@ -650,7 +668,7 @@ footer {
 }
 
 .social-icon li a {
-    color: #666;
+    color: #082644 ;
     border-radius: 100px;
     font-size: 16px;
     text-decoration: none;
@@ -663,7 +681,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    background: #f2545f;
+    background: #ffca1a;
     color: #ffffff;
 }
 
@@ -716,6 +734,10 @@ footer {
 
   #program img {
     padding-bottom: 32px;
+  }
+
+  #collaborators img {
+    padding-top: 22px;
   }
 
   #sponsors img {
