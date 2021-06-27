@@ -15,7 +15,7 @@ body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typography              
 -----------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
@@ -56,7 +56,8 @@ a {
 }
 
 li {
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 
@@ -64,7 +65,7 @@ li {
     General               
 -----------------------------------------*/
 .section-title {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 #overview, #detail, #video,
@@ -89,6 +90,10 @@ footer {
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
+}
+
+#overview h4{
+  line-height: 26px;
 }
 
 #intro .btn,
@@ -495,11 +500,11 @@ footer {
    Faq section              
 -----------------------------------------*/
 #faq {
-  background: linear-gradient(to left,#fdff8181, #ffca1ae5), url('../images/4890802.jpg') 50% 0 repeat-y fixed; 
+  background: linear-gradient(to left,#ffca1ac7, #ffca1ab9), url('../images/4890802.jpg') 50% 0 repeat-y fixed; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
