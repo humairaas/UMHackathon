@@ -67,7 +67,7 @@ li {
   margin-bottom: 32px;
 }
 
-#detail, #video,
+#overview, #detail, #video,
 #events, 
 #register,
 #collaborators, 
@@ -75,11 +75,6 @@ li {
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
-}
-
-#overview {
-    padding-top: 10rem;
-    padding-bottom: 5rem;
 }
 
 #detail,
@@ -338,8 +333,8 @@ footer {
     Detail section              
 -----------------------------------------*/
 #detail {
-    background: #082644;
-    color: #ffffff;
+    background: #f9f9f9;
+    color: #082644;
 }
 
 #detail .fa {
@@ -500,10 +495,20 @@ footer {
    Faq section              
 -----------------------------------------*/
 #faq {
-  background: #f9f9f9;
+  background: linear-gradient(to left,#fdff8181, #ffca1ae5), url('../images/4890802.jpg') 50% 0 repeat-y fixed; 
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: rgb(0, 0, 0);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+/*
+#faq {
+  background: #f9f9f9;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}*/
 
 #faq .panel-group {
   margin-top: 32px;
@@ -607,6 +612,14 @@ footer {
 
 #sponsor-text {
   color:#9c9ea0;
+}
+
+#spon-img {
+  width: 200px;
+}
+
+#spon-img2 {
+  width: 300px;
 }
 
 
@@ -870,6 +883,10 @@ footer {
 
   #TnC-text {
     margin-top: 0px; 
+  }
+
+  #spon-img {
+    width: 200px;
   }
 
 }
