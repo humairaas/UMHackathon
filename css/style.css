@@ -67,7 +67,7 @@ li {
   margin-bottom: 32px;
 }
 
-#overview, #detail, #video,
+#detail, #video,
 #events, 
 #register,
 #collaborators, 
@@ -75,6 +75,11 @@ li {
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+#overview {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 #detail,
