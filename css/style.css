@@ -55,6 +55,10 @@ a {
   outline: none;
 }
 
+li {
+  line-height: 2;
+}
+
 
 /*---------------------------------------
     General               
@@ -63,30 +67,30 @@ a {
   margin-bottom: 32px;
 }
 
-#overview,
-#register {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
 #detail, #video,
-#speakers, 
-#program,
-#sponsors, 
+#events, 
+#register,
+#collaborators, 
+#sponsors,#TnC,  
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
+#overview {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
 #detail,
-#speakers, #sponsors,
+#events, #sponsors, #collaborators, 
 footer {
   text-align: center;
 }
 
 #overview h3,
 #detail h3, #video h3,
-#register h3,
+#register h3, #TnC h3,
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -110,8 +114,9 @@ footer {
 
 #intro .btn-danger,
 #contact .btn-danger {
-    background: #f2545f;
-    border-color: transparent;
+    background: transparent;
+    border-color: #082644;
+    color:#082644
 }
 
 #contact .btn {
@@ -119,7 +124,7 @@ footer {
 }
 
 #intro .btn-danger:hover {
-  background: transparent;
+  background: #ffca1a;
   border-color: #ffffff;
   color: #ffffff;
 }
@@ -130,7 +135,7 @@ footer {
 
 #intro .btn-default:hover {
     background: #ffffff;
-    color: #333333;
+    color: #082644;
     border-color: transparent;
 }
 
@@ -192,20 +197,26 @@ footer {
 /*---------------------------------------
     Navigation Links section              
 -----------------------------------------*/
+#navigation-logo {
+  width: 2in;
+  margin-top: 4px;
+}
+
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #101010;
+    background-color: white;
+    box-shadow: 0px 5px 40px #b8b3b370
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
+    color: #082644;
     font-weight: 600;
     font-size: 3rem;
     line-height: 40px;
 }
 
 .custom-navbar .nav li a {
-    color: #ddd;
+    color: #082644;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -216,7 +227,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #66ccff;
+    color: #ffca1a;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -226,7 +237,7 @@ footer {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #66ccff;
+    color: #ffca1a;
 }
 
 .custom-navbar .navbar-toggle {
@@ -235,12 +246,17 @@ footer {
 }
 
 .custom-navbar .navbar-toggle {
-    background-color: transparent;
+    background-color: #082644;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
+    background: white;
     border-color: transparent;
+}
+@media(max-width:768px) {
+  #navigation-logo {
+    margin-top: 0px;
+  }
 }
 
 @media(min-width:768px) {
@@ -250,7 +266,7 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: #101010;
+        background: #ffffff;
         padding: 0;
     }
 
@@ -262,26 +278,34 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/4890802.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
-     display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
      -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 
 #intro h3 {
   letter-spacing: 2px;
 }
+
+#header-img{
+  max-width: 70%;
+  min-width: 300px;
+  height: auto;
+  margin-top: 100px;
+}
+
 
 
 
@@ -293,18 +317,23 @@ footer {
   padding-bottom: 32px;
 }
 
+#overview{
+  background: #082644;
+  color: #ffffff;
+}
+
 
 
 /*---------------------------------------
     Detail section              
 -----------------------------------------*/
 #detail {
-    background: #222;
+    background: #082644;
     color: #ffffff;
 }
 
 #detail .fa {
-  color: #f2545f;
+  color: #ffca1a;
   font-size: 48px;
 }
 
@@ -320,29 +349,29 @@ footer {
 
 
 /*---------------------------------------
-   Speakers section              
+   Events section              
 -----------------------------------------*/
-#speakers {
+#events {
     background: #f9f9f9;
 }
 
-#speakers h3 {
+#events h3 {
     font-size: 18px;
     margin-bottom: 0px;
 }
 
-#speakers h6 {
-  color: #666;
+#events h6 {
+  color: #082644;
   margin-top: 4px;
 }
 
-#speakers img {
+#events img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-#speakers .col-md-3 {
+#events .col-md-3 {
     display: block;
     width: 100%;
     padding-top: 30px;
@@ -350,7 +379,7 @@ footer {
     margin-bottom: 22px;
 }
 
-#speakers .speakers-wrapper {
+#events .events-wrapper {
     background: #ffffff;
     padding-bottom: 22px;
 }
@@ -361,7 +390,7 @@ footer {
    Program section              
 -----------------------------------------*/
 #program h4 {
-    color: #808080;
+    color: #082644;
     font-size: 12px;
 }
 
@@ -404,7 +433,7 @@ footer {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #f2545f;
+  color: #ffca1a;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -417,14 +446,14 @@ footer {
 
 
 /*---------------------------------------
-    Regsiter section              
+    Register section              
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    background: linear-gradient(to left,#fdff8181, #ffca1ae5), url('../images/4890802.jpg') 50% 0 repeat-y fixed; 
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 
 #register .form-control {
@@ -440,7 +469,7 @@ footer {
 }
 
 #register input[type="submit"] {
-  background: #f2545f;
+  background: #ffca1a;
   border-radius: 100px;
   border: none;
   color: #ffffff;
@@ -479,8 +508,8 @@ footer {
 }
 
 #faq .panel-default>.panel-heading {
-  background: #f0f0f0;
-  color: #505050;
+  background: #082644e8;
+  color: white;
 }
 
 #faq .panel-heading {
@@ -523,14 +552,27 @@ footer {
 
 
 /*---------------------------------------
-   Venue section              
+   Calender section
 -----------------------------------------*/
+#calender-wrapper {
+  display: flex;
+}
+#calender-intro {
+  min-width: 25%;
+  float: left;
+}
+
+#calender-itself {
+  float: right;
+  width: 100%;
+}
+
 #venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 #venue p {
@@ -538,6 +580,12 @@ footer {
   padding-bottom: 18px;
 }
 
+/*---------------------------------------
+   Collaborators section              
+-----------------------------------------*/
+#collaborators img {
+  margin-top: 18px;
+}
 
 
 /*---------------------------------------
@@ -598,11 +646,25 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #f2545f;
+  background: #ffca1a;
 }
 
+/*---------------------------------------
+   T&C section              
+-----------------------------------------*/
+#TnC-m {
+  margin-bottom: 40px;
+}
 
+#TnC {
+ background: white;
+}
 
+#TnC-text {
+  margin-top: 70px; 
+  margin-bottom: 30px;
+  font-size: 30px;
+}
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -614,7 +676,7 @@ footer {
 
 /* Back top */
 .go-top {
-  background-color: #222;
+  background-color: #082644;
   bottom: 2em;
   right: 2em;
   color: #ffffff;
@@ -627,10 +689,11 @@ footer {
   line-height: 60px;
   text-align: center;
   transition: all 0.4s ease-in-out;
+  border: 1px rgb(255, 254, 254) solid;
 }
 
 .go-top:hover {
-    background: #f2545f;
+    background: #ffca1a;
     color: #ffffff;
 }
 
@@ -650,7 +713,7 @@ footer {
 }
 
 .social-icon li a {
-    color: #666;
+    color: #082644 ;
     border-radius: 100px;
     font-size: 16px;
     text-decoration: none;
@@ -663,7 +726,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    background: #f2545f;
+    background: #ffca1a;
     color: #ffffff;
 }
 
@@ -700,6 +763,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  #calender-itself {
+    padding: 0;
+  }
+
   .custom-navbar .navbar-brand {
     line-height: 20px;
   }
@@ -718,6 +785,10 @@ footer {
     padding-bottom: 32px;
   }
 
+  #collaborators img {
+    padding-top: 22px;
+  }
+
   #sponsors img {
     padding-top: 22px;
   }
@@ -726,12 +797,24 @@ footer {
     margin-top: 82px;
   }
 
+  #calender-wrapper {
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 760px) {
 
   #intro {
     height: 100vh;
+  }
+
+  #header-img{
+    margin-top: 0px;
+  }
+
+  #TnC-text {
+    margin-top: 0px; 
   }
 
 }
