@@ -192,6 +192,11 @@ footer {
 /*---------------------------------------
     Navigation Links section              
 -----------------------------------------*/
+#navigation-logo {
+  width: 2in;
+  margin-top: 4px;
+}
+
 .custom-navbar {
     margin-bottom: 0;
     background-color: white;
@@ -242,6 +247,11 @@ footer {
 .custom-navbar .navbar-toggle .icon-bar {
     background: white;
     border-color: transparent;
+}
+@media(max-width:768px) {
+  #navigation-logo {
+    margin-top: 0px;
+  }
 }
 
 @media(min-width:768px) {
@@ -439,12 +449,7 @@ footer {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-<<<<<<< HEAD
-    /* background-color: #082644; */
-    color: #ffffff;
-=======
     color: #222;
->>>>>>> a54bdbee4623e732dda52bb04c2da7785c4e363d
 }
 
 #register .form-control {
@@ -545,6 +550,19 @@ footer {
 /*---------------------------------------
    Calender section
 -----------------------------------------*/
+#calender-wrapper {
+  display: flex;
+}
+#calender-intro {
+  min-width: 25%;
+  float: left;
+}
+
+#calender-itself {
+  float: right;
+  width: 100%;
+}
+
 #venue {
   background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
@@ -740,6 +758,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  #calender-itself {
+    padding: 0;
+  }
+
   .custom-navbar .navbar-brand {
     line-height: 20px;
   }
@@ -768,6 +790,10 @@ footer {
 
   #contact .contact_detail {
     margin-top: 82px;
+  }
+
+  #calender-wrapper {
+    flex-direction: column;
   }
 
 }
