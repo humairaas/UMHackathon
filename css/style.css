@@ -68,7 +68,7 @@ li {
   margin-bottom: 22px;
 }
 
-#overview, #detail, #video,
+#overview, #video,
 #events, 
 #register,
 #collaborators, 
@@ -76,6 +76,17 @@ li {
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+#detail {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+#timeline {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  text-align: center;
 }
 
 #detail,
@@ -595,9 +606,12 @@ ul.no-bullets{
 }
 
 #calender-itself {
-  float: right;
-  width: 100%;
+  width: 60%;
+  padding-right: 70px;
+  padding-left: 70px;
 }
+
+
 
 #venue {
   background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
@@ -716,7 +730,6 @@ ul.no-bullets{
 footer {
   background-attachment: fixed;
 }
-
 
 
 /* Back top */
@@ -842,10 +855,6 @@ footer {
 
 @media (max-width: 768px) {
 
-  #calender-itself {
-    padding: 0;
-  }
-
   .custom-navbar .navbar-brand {
     line-height: 20px;
   }
@@ -880,6 +889,12 @@ footer {
     flex-direction: column;
   }
 
+  #calender-itself {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 760px) {
@@ -909,6 +924,11 @@ footer {
 
   #spon-img2 {
     width: 200px;
+  }
+  #calender-itself {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
   }
 
 }
