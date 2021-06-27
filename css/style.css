@@ -685,6 +685,7 @@ footer {
   line-height: 60px;
   text-align: center;
   transition: all 0.4s ease-in-out;
+  border: 1px black solid;
 }
 
 .go-top:hover {
