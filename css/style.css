@@ -827,6 +827,11 @@ footer {
   height: auto;
   margin-top: px;
 }
+#calender-itself {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
 
 #intro {
   background: url('../images/4890802.jpg') 50% 0 repeat-y fixed;
